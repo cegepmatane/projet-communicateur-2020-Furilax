@@ -14,7 +14,7 @@ public class RecupererMessage {
 		
 		List<Message> listeMessages = new ArrayList<Message>();
 		
-		String CLE = "xoxp-1503846676852-1482950876327-1544507517572-b27c0e5e4a7aa8e51557708a04e843f8";
+		String CLE = "xoxb-1503846676852-1544518812964-lbqSBwzun7fEfbiWDiAmW8N6";
 		String URL_SALON_DISCUSSION = "https://slack.com/api/conversations.history";
 		String SALON = "#filmsaction";
 		String SALON_ID = "C01E6U4MJ23";	

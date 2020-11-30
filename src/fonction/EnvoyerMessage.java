@@ -11,7 +11,7 @@ public class EnvoyerMessage {
 	public void envoyer(String message, String salon) {
 		try {
 			
-			String CLE = "xoxp-1503846676852-1482950876327-1544507517572-b27c0e5e4a7aa8e51557708a04e843f8";
+			String CLE = "xoxb-1503846676852-1544518812964-lbqSBwzun7fEfbiWDiAmW8N6";
 			String URL_ENVOYER_MESSAGE = "https://slack.com/api/chat.postMessage";
 			String ENVOI = "{'channel': '"+ salon +"',  'text': '"+message+"'}";
 			System.out.println(ENVOI);
