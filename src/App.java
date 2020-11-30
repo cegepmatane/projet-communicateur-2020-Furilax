@@ -16,7 +16,7 @@ public class App {
 		//Fenetre.launch(Fenetre.class, parametres);	
 		RecupererMessage messageFonction = new RecupererMessage();
 		List<Message> listeMessages = new ArrayList<Message>();
-		listeMessages = messageFonction.RecupererMessage();
+		listeMessages = messageFonction.RecupererMessage("C01E6U4MJ23");
 		for (Message message : listeMessages) 
 		{ 
 			System.out.println(message.user + " : "+message.text);

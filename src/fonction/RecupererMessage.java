@@ -10,17 +10,15 @@ import java.util.Scanner;
 import modele.Message;
 
 public class RecupererMessage {
-	public List<Message> RecupererMessage() {
+	public List<Message> RecupererMessage(String idDeSalon) {
 		
 		List<Message> listeMessages = new ArrayList<Message>();
 		
 		String CLE = "xoxb-1503846676852-1544518812964-lbqSBwzun7fEfbiWDiAmW8N6";
 		String URL_SALON_DISCUSSION = "https://slack.com/api/conversations.history";
-		String SALON = "#filmsaction";
-		String SALON_ID = "C01E6U4MJ23";	
 		try {
 						
-			URL urlSalonDiscussion = new URL(URL_SALON_DISCUSSION + "?channel=" + SALON_ID);
+			URL urlSalonDiscussion = new URL(URL_SALON_DISCUSSION + "?channel=" + idDeSalon);
 			HttpURLConnection connection = (HttpURLConnection) urlSalonDiscussion.openConnection();
 			connection.setRequestProperty("Authorization","Bearer "+CLE);
 			connection.setRequestMethod("GET");
