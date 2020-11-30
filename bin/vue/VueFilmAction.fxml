@@ -23,14 +23,14 @@
             </Pane>
          </children>
       </AnchorPane>
-      <Pane id="banderolle" layoutX="-3.0" prefHeight="127.0" prefWidth="1294.0" style="-fx-background-color: defe47;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Pane id="banderolle" layoutX="-3.0" prefHeight="127.0" prefWidth="1294.0" style="-fx-background-color: a33e3e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label id="salon-titre" layoutX="417.0" layoutY="41.0" prefHeight="40.0" prefWidth="312.0" text="Film de science fiction" textOverrun="CLIP">
+            <Label id="salon-titre" layoutX="417.0" layoutY="41.0" prefHeight="40.0" prefWidth="242.0" text="Film d'action" textOverrun="CLIP">
                <font>
                   <Font name="Garuda Bold" size="75.0" />
                </font>
             </Label>
-            <Label id="salon-sous-titre" layoutX="411.0" layoutY="67.0" prefHeight="27.0" text="pour ceux qui aiment les films de science fiction" textFill="WHITE" />
+            <Label id="salon-sous-titre" layoutX="411.0" layoutY="67.0" prefHeight="27.0" text="pour ce qui aime les films d'action " textFill="WHITE" />
             <Circle id="logo" layoutX="333.0" layoutY="60.0" radius="52.0" stroke="BLACK" strokeType="INSIDE">
                <fill>
                   <RadialGradient centerX="0.5" centerY="0.507633616906086" radius="0.5">
