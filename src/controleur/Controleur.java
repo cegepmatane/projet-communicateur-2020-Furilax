@@ -8,7 +8,5 @@ public class Controleur {
 	{
 		//return VueMurmure.getInstance();
 		return VueFilmAction.getInstance();
-	}
-
-		
+	}	
 }
