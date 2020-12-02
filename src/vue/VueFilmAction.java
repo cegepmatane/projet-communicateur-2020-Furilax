@@ -33,7 +33,22 @@ public class VueFilmAction extends Vue {
 	public void activerControles()
 	{
 		super.activerControles();
-		
+
+		LoadMessage();
+		/*
+		Button actionCalculatrice = (Button) lookup("#action-calculatrice");
+		actionCalculatrice.setOnAction(new EventHandler<ActionEvent>() 
+		{
+            @Override public void handle(ActionEvent e) 
+            {
+            	Logger.logMsg(Logger.INFO, "Bouton Calculatrice activé");
+            	controleur.notifierEvenement(ActionNavigation.CALCULATRICE);
+            }
+        });
+		*/
+	}
+	
+	private void LoadMessage() {
 		RecupererMessage messageFonction = new RecupererMessage();
 		List<Message> listeMessages = new ArrayList<Message>();
 		listeMessages = messageFonction.RecupererMessage("C01E6U4MJ23");
@@ -62,17 +77,5 @@ public class VueFilmAction extends Vue {
 		scroll.setVvalue(1.0); 
 		scroll.setStyle("-fx-background: #232323; -fx-border-color: #232323;");
 		scroll.setHbarPolicy(ScrollBarPolicy.NEVER);
-		/*
-		Button actionCalculatrice = (Button) lookup("#action-calculatrice");
-		actionCalculatrice.setOnAction(new EventHandler<ActionEvent>() 
-		{
-            @Override public void handle(ActionEvent e) 
-            {
-            	Logger.logMsg(Logger.INFO, "Bouton Calculatrice activé");
-            	controleur.notifierEvenement(ActionNavigation.CALCULATRICE);
-            }
-        });
-		*/
-
 	}
 }
