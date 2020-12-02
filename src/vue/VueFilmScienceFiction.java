@@ -5,6 +5,7 @@ import java.util.List;
 import com.sun.media.jfxmedia.logging.Logger;
 import fonction.RecupererMessage;
 import javafx.scene.layout.Pane;
+import modele.BadgeCinephile;
 import modele.Message;
 import controleur.ControleurFilmScienceFiction;
 
@@ -25,6 +26,10 @@ public class VueFilmScienceFiction extends Vue {
 	{
 		super.activerControles();
 		
+		BadgeCinephile badge = new BadgeCinephile();
+		
+		Pane panneauChat = (Pane) lookup("#chat");
+		panneauChat.getChildren().add(badge);
 		
 	}
 }
