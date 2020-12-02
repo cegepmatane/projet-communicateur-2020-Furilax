@@ -44,14 +44,14 @@
                                     <Image url="@badge.png" />
                                  </image>
                               </ImageView>
-                              <Label layoutX="31.0" layoutY="19.0" text="Cinephile" textFill="WHITE">
+                              <Label alignment="CENTER" layoutX="31.0" layoutY="19.0" text="Cinephile" textFill="WHITE">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
                               <ImageView fitHeight="59.0" fitWidth="74.0" layoutX="50.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icone%20filme.png" />
+                                    <Image url="@iconeFilm.png" />
                                  </image>
                               </ImageView>
                            </children>

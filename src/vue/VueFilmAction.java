@@ -34,6 +34,10 @@ public class VueFilmAction extends Vue {
 			
 		}
 		
+		BadgeCinephile badge = new BadgeCinephile();
+		
+		Pane panneauChat = (Pane) lookup("#chat");
+		panneauChat.getChildren().add(badge);
 		
 		/*
 		Button actionCalculatrice = (Button) lookup("#action-calculatrice");
