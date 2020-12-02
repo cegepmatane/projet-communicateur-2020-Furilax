@@ -4,8 +4,14 @@ import java.util.Collections;
 import java.util.List;
 
 import com.sun.media.jfxmedia.logging.Logger;
+
+import fonction.EnvoyerMessage;
 import fonction.RecupererMessage;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextField;
 import javafx.scene.control.ScrollPane.ScrollBarPolicy;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
@@ -46,6 +52,14 @@ public class VueFilmAction extends Vue {
             }
         });
 		*/
+		Button BouttonEnvoyer = (Button)lookup("#BouttonEnvoyer");
+		BouttonEnvoyer.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent arg0) 
+			{
+				EnvoyerText();
+			}
+		});
 	}
 	
 	private void LoadMessage() {
@@ -77,5 +91,12 @@ public class VueFilmAction extends Vue {
 		scroll.setVvalue(1.0); 
 		scroll.setStyle("-fx-background: #232323; -fx-border-color: #232323;");
 		scroll.setHbarPolicy(ScrollBarPolicy.NEVER);
+	}
+	
+	private void EnvoyerText() {
+		TextField text = (TextField)lookup("#Text");
+		EnvoyerMessage envoyerFonction = new EnvoyerMessage();
+		envoyerFonction.envoyer(text.getText(), "#filmsaction");
+		LoadMessage();
 	}
 }
