@@ -16,9 +16,9 @@ public abstract class Navigateur extends Application{ // Application de javafx e
 	{
 		instance = this;
 		Logger.setLevel(Logger.INFO);
-		VueFilmAction.getInstance().activerControles();
+		//VueFilmAction.getInstance().activerControles();
 		//VueFilmScienceFiction.getInstance().activerControles();
-		//VueFilmAnimation.getInstance().activerControles();
+		VueFilmAnimation.getInstance().activerControles();
 		
 	}
 	

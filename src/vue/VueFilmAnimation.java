@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 
+
 public class VueFilmAnimation extends Vue {
 	protected static VueFilmAnimation instance = null; 
 	public static VueFilmAnimation getInstance() {if(null==instance)instance = new VueFilmAnimation();return VueFilmAnimation.instance;}; 
@@ -23,17 +24,20 @@ public class VueFilmAnimation extends Vue {
 	public void activerControles() 
 	{	
 		super.activerControles();
-		
-		TextField text = new TextField();
+
 		Button BouttonEnvoyer = (Button)lookup("#BouttonEnvoyer");
 		BouttonEnvoyer.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent arg0) 
 			{
-				text.getText();
-				EnvoyerMessage envoyerFonction = new EnvoyerMessage();
-				envoyerFonction.envoyer("text", "#filmAnimation");
+				EnvoyerText();
 			}
 		});
+	}
+	
+	private void EnvoyerText() {
+		TextField text = (TextField)lookup("#Text");
+		EnvoyerMessage envoyerFonction = new EnvoyerMessage();
+		envoyerFonction.envoyer(text.getText(), "#filmsanimation");	
 	}
 }

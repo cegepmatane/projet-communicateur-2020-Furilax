@@ -19,7 +19,7 @@
          <children>
             <Pane id="chat" layoutX="-1.0" layoutY="-6.0" prefHeight="623.0" prefWidth="1087.0">
                <children>
-                  <TextField id="TextField" layoutX="14.0" layoutY="571.0" prefHeight="38.0" prefWidth="937.0" promptText="Envoyer un message dans #Film d'Animation" style="-fx-background-radius: 10; -fx-background-color: #36393e; -fx-text-inner-color: #FFFFFF;">
+                  <TextField id="Text" fx:id="Text" layoutX="14.0" layoutY="571.0" prefHeight="38.0" prefWidth="937.0" promptText="Envoyer un message dans #Film d'Animation" style="-fx-background-radius: 10; -fx-background-color: #36393e; -fx-text-inner-color: #FFFFFF;">
                      <font>
                         <Font size="15.0" />
                      </font>
