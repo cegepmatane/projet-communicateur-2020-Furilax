@@ -22,6 +22,7 @@ public class VueFilmAction extends Vue {
 	
 	protected ControleurFilmAction controleur;
 	protected static VueFilmAction instance = null; 
+	private List<Pane> paneList = new ArrayList<Pane>(); 
 	
 	public static VueFilmAction getInstance() {
 		if (null == instance)
@@ -70,6 +71,9 @@ public class VueFilmAction extends Vue {
 		ScrollPane scroll = (ScrollPane)lookup("#scrollPane");
 		Pane messageBox = (Pane)lookup("#vBoxParents");
 		scroll.setContent(messageBox); 
+		for(Pane pane : paneList) {
+			messageBox.getChildren().remove(pane);
+		}
 		for (Message message : listeMessages) 
 		{ 
 			Pane messagePane = new Pane();
@@ -86,7 +90,7 @@ public class VueFilmAction extends Vue {
 			messagePane.setMaxWidth(300);
 			messagePane.setMinHeight(50);
 			messageBox.getChildren().add(messagePane);
-			
+			paneList.add(messagePane);
 		}
 		scroll.setVvalue(1.0); 
 		scroll.setStyle("-fx-background: #232323; -fx-border-color: #232323;");
@@ -97,6 +101,7 @@ public class VueFilmAction extends Vue {
 		TextField text = (TextField)lookup("#Text");
 		EnvoyerMessage envoyerFonction = new EnvoyerMessage();
 		envoyerFonction.envoyer(text.getText(), "#filmsaction");
+		text.setText("");
 		LoadMessage();
 	}
 }
