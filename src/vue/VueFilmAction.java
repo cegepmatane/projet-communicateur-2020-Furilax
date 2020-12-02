@@ -54,6 +54,7 @@ public class VueFilmAction extends Vue {
 			messageBox.getChildren().add(messagePane);
 			
 		}
+<<<<<<< HEAD
 		BadgeCinephile badge = new BadgeCinephile();
 		
 		Pane panneauChat = (Pane) lookup("#chat");
@@ -62,6 +63,12 @@ public class VueFilmAction extends Vue {
 		scroll.setStyle("-fx-background: #232323; -fx-border-color: #232323;");
 		scroll.setHbarPolicy(ScrollBarPolicy.NEVER);
 		
+=======
+		scroll.setVvalue(1.0); 
+		scroll.setStyle("-fx-background: #232323; -fx-border-color: #232323;");
+		scroll.setHbarPolicy(ScrollBarPolicy.NEVER);
+
+>>>>>>> b13de3625cf2b95bafb423c0f0ea19e5c7d4a985
 		/*
 		Button actionCalculatrice = (Button) lookup("#action-calculatrice");
 		actionCalculatrice.setOnAction(new EventHandler<ActionEvent>() 
