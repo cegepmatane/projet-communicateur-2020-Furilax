@@ -16,8 +16,13 @@ public class VueFilmAction extends Vue {
 	
 	protected ControleurFilmAction controleur;
 	protected static VueFilmAction instance = null; 
-	public static VueFilmAction getInstance() {if(null==instance)instance = new VueFilmAction();return VueFilmAction.instance;}; 
 	
+	public static VueFilmAction getInstance() {
+		if (null == instance)
+			instance = new VueFilmAction();
+		return VueFilmAction.instance;
+	};
+
 	private VueFilmAction() 
 	{
 		super("VueFilmAction.fxml"); 
