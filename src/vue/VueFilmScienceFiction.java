@@ -25,14 +25,6 @@ public class VueFilmScienceFiction extends Vue {
 	{
 		super.activerControles();
 		
-		RecupererMessage messageFonction = new RecupererMessage();
-		List<Message> listeMessages = new ArrayList<Message>();
-		listeMessages = messageFonction.RecupererMessage("C01E6U4MJ23");
-		Pane messageBox = (Pane)lookup("#messageBox");
-		for (Message message : listeMessages) 
-		{ 
-			
-		}
 		
 	}
 }

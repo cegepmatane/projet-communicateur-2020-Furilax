@@ -1,7 +1,6 @@
 package controleur;
 
-import vue.Vue;
-import vue.VueFilmAction;
+import vue.*;
 
 public class Controleur {
 
