@@ -6,7 +6,6 @@ import com.sun.media.jfxmedia.logging.Logger;
 import fonction.RecupererMessage;
 import javafx.scene.layout.Pane;
 import modele.Message;
-
 import controleur.ControleurFilmAction;
 
 public class VueFilmAction extends Vue {
@@ -32,7 +31,7 @@ public class VueFilmAction extends Vue {
 		Pane messageBox = (Pane)lookup("#messageBox");
 		for (Message message : listeMessages) 
 		{ 
-			System.out.println(message.user + " : "+message.text);
+			
 		}
 		
 		

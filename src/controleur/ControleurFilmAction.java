@@ -6,7 +6,7 @@ public class ControleurFilmAction extends Controleur{
 
 	public ControleurFilmAction()
 	{
-		Logger.logMsg(Logger.INFO, "new ControleurMurmure()");
+		Logger.logMsg(Logger.INFO, "new ControleurFilmAction()");
 	}
 
 }
