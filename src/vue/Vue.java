@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 public class Vue extends Scene{
 	protected static FXMLLoader parseur = null;
 	protected Controleur controleur = null;
+	public String color;
 	
 	public Vue(String fxml)
 	{

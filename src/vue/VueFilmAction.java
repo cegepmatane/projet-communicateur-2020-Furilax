@@ -86,7 +86,7 @@ public class VueFilmAction extends Vue {
 			textUtilisateur.setLayoutY(20);
 			messagePane.getChildren().add(textUtilisateur);
 			messagePane.getChildren().add(textMessage);
-			messagePane.setStyle("-fx-background-color: #5f7bd8");
+			messagePane.setStyle("-fx-background-color: "+super.color);
 			messagePane.setMaxWidth(300);
 			messagePane.setMinHeight(50);
 			messageBox.getChildren().add(messagePane);

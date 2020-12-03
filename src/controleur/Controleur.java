@@ -6,7 +6,8 @@ public class Controleur {
 
 	public static Vue selectionnerVuePrincipale() 
 	{
-		return VueFilmAction.getInstance();
+		//return VueFilmAction.getInstance();
 		//return VueFilmAnimation.getInstance();
+		return VueOptions.getInstance();
 	}	
 }
