@@ -5,9 +5,13 @@ import java.io.IOException;
 import com.sun.media.jfxmedia.logging.Logger;
 
 import controleur.Controleur;
+import controleur.Controleur.ActionNavigation;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 
 public class Vue extends Scene{
 	protected static FXMLLoader parseur = null;
@@ -41,17 +45,26 @@ public class Vue extends Scene{
 
 	public void activerControles()
 	{	
-		Logger.logMsg(Logger.INFO, "activerControles()");
-		/*
-		Button actionRetour = (Button) lookup("#titre");
-		actionRetour.setOnAction(new EventHandler<ActionEvent>() 
-		{
-	        @Override public void handle(ActionEvent e) 
-	        {
-	        	Logger.logMsg(Logger.INFO, "Bouton Retour activé");
-	        	controleur.notifierEvenement(ActionNavigation.RETOUR);
-	        }
-	    });*/
+		//Logger.logMsg(Logger.INFO, "activerControles()");
+		
+		Button actionFilmAction = (Button)lookup("#bouttonAction");
+		if(actionFilmAction != null) {
+			actionFilmAction.setOnAction(new EventHandler<ActionEvent>() {
+				@Override public void handle(ActionEvent e) {
+					Logger.logMsg(Logger.INFO,"Bouton film action");
+					controleur.notifierEvenement(ActionNavigation.ACTION);
+				}
+			});
+		}
+		Button actionOptions = (Button)lookup("#bouttonOptions");
+		if(actionOptions != null) {
+			actionOptions.setOnAction(new EventHandler<ActionEvent>() {
+				@Override public void handle(ActionEvent e) {
+					Logger.logMsg(Logger.INFO,"Bouton options");
+					controleur.notifierEvenement(ActionNavigation.OPTIONS);
+				}
+			});
+		}
 	}		
 	
 }
