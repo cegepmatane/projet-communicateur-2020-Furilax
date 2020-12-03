@@ -6,6 +6,6 @@ public class Controleur {
 
 	public static Vue selectionnerVuePrincipale() 
 	{
-		return VueFilmAction.getInstance();
+		return VueFilmScienceFiction.getInstance();
 	}	
 }
