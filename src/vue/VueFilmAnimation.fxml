@@ -30,13 +30,15 @@
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <ScrollPane id="scrollPane" fx:id="scrollPane" prefHeight="530.0" prefWidth="1068.0" style="fx-background: green;" />
-                  <VBox id="vBoxParents" fx:id="vBoxParents" prefHeight="530.0" prefWidth="1068.0" spacing="15.0" />
+                  <ScrollPane id="scrollPane" fx:id="scrollPane" prefHeight="530.0" prefWidth="1068.0" style="fx-background: green;">
+                     <content>
+                        <VBox id="vBoxParents" fx:id="vBoxParents" prefHeight="530.0" prefWidth="1068.0" spacing="15.0" />
+                     </content></ScrollPane>
                </children>
             </Pane>
          </children>
       </AnchorPane>
-      <Pane id="banderolle" layoutX="-3.0" prefHeight="127.0" prefWidth="1294.0" style="-fx-background-color: a33e3e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Pane id="banderolle" layoutX="-3.0" prefHeight="127.0" prefWidth="1294.0" style="-fx-background-color: #4ff278;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label id="salon-titre" layoutX="417.0" layoutY="41.0" prefHeight="40.0" prefWidth="242.0" text="Film d'Animation" textOverrun="CLIP">
                <font>
