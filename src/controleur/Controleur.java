@@ -9,6 +9,7 @@ public class Controleur {
 		//return VueFilmScienceFiction.getInstance();
 		//return VueFilmAction.getInstance();
 		//return VueFilmAnimation.getInstance();
-		return VueOptions.getInstance();
+		//return VueOptions.getInstance();
+		return VueBadge.getInstance();
 	}	
 }

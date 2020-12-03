@@ -22,6 +22,7 @@ public abstract class Navigateur extends Application{ // Application de javafx e
 		//VueFilmScienceFiction.getInstance().activerControles();
 		VueFilmAnimation.getInstance().activerControles();
 		VueOptions.getInstance().activerControles();
+		VueBadge.getInstance().activerControles();
 		
 	}
 	
