@@ -37,11 +37,16 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <AnchorPane prefHeight="175.0" prefWidth="175.0">
+                        <AnchorPane prefHeight="175.0" prefWidth="175.0" style="-fx-background-color: white;">
                            <children>
                               <ImageView fitHeight="175.0" fitWidth="175.0" layoutX="1.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@badge.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="59.0" fitWidth="74.0" layoutX="50.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@iconeFilm.png" />
                                  </image>
                               </ImageView>
                               <Label alignment="CENTER" layoutX="31.0" layoutY="19.0" text="Cinephile" textFill="WHITE">
@@ -49,11 +54,6 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <ImageView fitHeight="59.0" fitWidth="74.0" layoutX="50.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@iconeFilm.png" />
-                                 </image>
-                              </ImageView>
                            </children>
                         </AnchorPane>
                      </children>
