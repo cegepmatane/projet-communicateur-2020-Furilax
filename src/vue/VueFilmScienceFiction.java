@@ -68,7 +68,7 @@ public class VueFilmScienceFiction extends Vue {
 		for(Pane pane : paneList) {
 			messageBox.getChildren().remove(pane);
 		}
-		for (Message message : listeMessages) 
+		for (Message message : listeMessages)
 		{ 
 			Pane messagePane = new Pane();
 			Text textUtilisateur = new Text();
