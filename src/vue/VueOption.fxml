@@ -96,7 +96,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button id="bouttonOptions" fx:id="bouttonOptions" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Options " textFill="WHITE">
+                  <Button id="bouttonOptions" fx:id="bouttonOptions" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #808080; -fx-background-radius: 10;" styleClass="action-salon" text="Options " textFill="WHITE">
                      <VBox.margin>
                         <Insets bottom="20.0" />
                      </VBox.margin>
