@@ -43,7 +43,7 @@
             <VBox layoutX="32.0" layoutY="125.0" prefHeight="602.0" prefWidth="200.0">
                <children>
                   <Label styleClass="titre" text="Salons" textFill="WHITE" />
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Film d'action" textFill="WHITE">
+                  <Button id="bouttonAction" fx:id="bouttonAction" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Film d'action" textFill="WHITE">
                      <VBox.margin>
                         <Insets bottom="20.0" />
                      </VBox.margin>
@@ -51,7 +51,7 @@
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Film d'animation" textFill="WHITE">
+                  <Button id="bouttonAnimation" fx:id="bouttonAnimation" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Film d'animation" textFill="WHITE">
                      <VBox.margin>
                         <Insets bottom="20.0" />
                      </VBox.margin>
@@ -59,15 +59,15 @@
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Film de SF" textFill="WHITE">
+                  <Button id="bouttonScienceFiction" fx:id="bouttonScienceFiction" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Film de SF" textFill="WHITE">
                      <VBox.margin>
                         <Insets bottom="20.0" />
                      </VBox.margin>
                      <font>
-                        <Font size="18.0" />
+                        <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Badge" textFill="WHITE">
+                  <Button id="bouttonBadge" fx:id="bouttonBadge" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #808080; -fx-background-radius: 10;" styleClass="action-salon" text="Badge" textFill="WHITE">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -75,7 +75,7 @@
                         <Insets bottom="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Options " textFill="WHITE">
+                  <Button id="bouttonOptions" fx:id="bouttonOptions" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #36393e; -fx-background-radius: 10;" styleClass="action-salon" text="Options " textFill="WHITE">
                      <VBox.margin>
                         <Insets bottom="20.0" />
                      </VBox.margin>

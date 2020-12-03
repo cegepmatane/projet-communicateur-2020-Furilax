@@ -66,6 +66,33 @@ public class Vue extends Scene{
 				}
 			});
 		}
+		Button actionAnimation = (Button)lookup("#bouttonAnimation");
+		if(actionAnimation != null) {
+			actionAnimation.setOnAction(new EventHandler<ActionEvent>() {
+				@Override public void handle(ActionEvent e) {
+					Logger.logMsg(Logger.INFO,"Bouton animation");
+					controleur.notifierEvenement(ActionNavigation.ANIMATION);
+				}
+			});
+		}
+		Button actionScienceFiction = (Button)lookup("#bouttonScienceFiction");
+		if(actionScienceFiction != null) {
+			actionScienceFiction.setOnAction(new EventHandler<ActionEvent>() {
+				@Override public void handle(ActionEvent e) {
+					Logger.logMsg(Logger.INFO,"Bouton science ficiton");
+					controleur.notifierEvenement(ActionNavigation.SCIENCEFICTION);
+				}
+			});
+		}
+		Button actionBadge = (Button)lookup("#bouttonBadge");
+		if(actionBadge != null) {
+			actionBadge.setOnAction(new EventHandler<ActionEvent>() {
+				@Override public void handle(ActionEvent e) {
+					Logger.logMsg(Logger.INFO,"Bouton badge");
+					controleur.notifierEvenement(ActionNavigation.BADGE);
+				}
+			});
+		}
 	}		
 	
 }
