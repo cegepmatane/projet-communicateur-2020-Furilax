@@ -22,7 +22,7 @@ public class VueFilmAction extends Vue {
 	
 	protected ControleurFilmAction controleur;
 	protected static VueFilmAction instance = null; 
-	private List<Pane> paneList = new ArrayList<Pane>(); 
+	private List<Pane> paneList = new ArrayList<Pane>();
 	
 	public static VueFilmAction getInstance() {
 		if (null == instance)
@@ -40,19 +40,10 @@ public class VueFilmAction extends Vue {
 	public void activerControles()
 	{
 		super.activerControles();
-
+		Logger.logMsg(Logger.INFO,color);
+		
 		LoadMessage();
-		/*
-		Button actionCalculatrice = (Button) lookup("#action-calculatrice");
-		actionCalculatrice.setOnAction(new EventHandler<ActionEvent>() 
-		{
-            @Override public void handle(ActionEvent e) 
-            {
-            	Logger.logMsg(Logger.INFO, "Bouton Calculatrice activé");
-            	controleur.notifierEvenement(ActionNavigation.CALCULATRICE);
-            }
-        });
-		*/
+		
 		Button BouttonEnvoyer = (Button)lookup("#BouttonEnvoyer");
 		BouttonEnvoyer.setOnAction(new EventHandler<ActionEvent>() {
 			@Override

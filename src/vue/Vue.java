@@ -16,7 +16,7 @@ import javafx.scene.control.Button;
 public class Vue extends Scene{
 	protected static FXMLLoader parseur = null;
 	protected Controleur controleur = null;
-	public String color;
+	public String color = "#FFFFFF";
 	
 	public Vue(String fxml)
 	{
@@ -56,6 +56,7 @@ public class Vue extends Scene{
 				}
 			});
 		}
+		
 		Button actionOptions = (Button)lookup("#bouttonOptions");
 		if(actionOptions != null) {
 			actionOptions.setOnAction(new EventHandler<ActionEvent>() {
