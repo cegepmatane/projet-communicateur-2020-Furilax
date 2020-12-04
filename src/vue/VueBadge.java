@@ -26,7 +26,7 @@ public class VueBadge extends Vue {
 	{
 		super.activerControles();
 		
-		BadgeCinephile badge = new BadgeCinephile().colorer("lime").utiliseBadge(ECUSSON.PREMIER).afficherSymbole(SYMBOLE.CLAP);
+		BadgeCinephile badge = new BadgeCinephile().colorer("red").utiliseBadge(ECUSSON.DEUXIEME).afficherSymbole(SYMBOLE.PELLICULE);
 		
 		Pane panneauChat = (Pane) lookup("#chat");
 		panneauChat.getChildren().add(badge);
